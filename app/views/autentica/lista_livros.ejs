@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GED</title>
+</head>
+<body>
+	<form action="#">
+	  <div class="mdl-textfield mdl-js-textfield">
+	    <label class="mdl-textfield__label" for="sample1">Diretório:</label>
+	    <input class="mdl-textfield__input" type="text" id="sample1">
+	    
+	  </div>
+	</form>
+	<form action="#">
+	  <div class="mdl-textfield mdl-js-textfield">
+	    <label class="mdl-textfield__label" for="sample1">Palavra Chave:</label>
+	    <input class="mdl-textfield__input" type="text" id="sample1">
+	    
+	  </div>
+	</form>
+	<!-- Simple list -->
+	<div id="header">
+	<style>
+	.demo-list-item {
+	  width: 200px;
+	  height: 500px;
+	  border: 2px solid black;
+	}
+	</style>
+	<h2>Diretórios</h2>
+	<ul class="demo-list-item mdl-list">
+	  <li class="mdl-list__item">
+	    <table>
+            <tr>
+                <td>id</td>
+                <td>nome</td>
+                <td>login</td>
+                <td>senha</td>
+                <td>email</td>
+            </tr>
+            <%for(var i=0; i < lista.length;i++){%>
+            <tr>
+                <td><%=lista[i].id%></td>
+                <td><%=lista[i].nome%></td>
+                <td><%=lista[i].login%></td>
+                <td><%=lista[i].senha%></td>
+                <td><%=lista[i].email%></td>
+            </tr>
+            <%}%>
+        </table>
+	  </li>
+	</div>
+
+	<div id="header">
+	<style>
+	.demo-list-item {
+	  width: 200px;
+	  height: 500px;
+	  border: 2px solid black;
+	}
+	</style>
+	<h2>Arquivos</h2>
+	<ul class="demo-list-item mdl-list">
+	  <li class="mdl-list__item">
+	    <span class="mdl-list__item-primary-content">
+	      Aqui serão listados os documentos do diretório selecionado!
+	    </span>
+	  </li>
+	  </div>
+	</ul>
+	<!-- Colored FAB button with ripple -->
+	<a href="incluir.html"><button>Incluir</button></a>
+</body>
+</html>

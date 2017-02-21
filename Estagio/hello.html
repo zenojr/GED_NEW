@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, inictial-scale=1, user-scalable=yes">
+    <title>Moustache GED</title>
+    <link rel="stylesheet" href="CSS/principal.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src='autentica.js'></script>
+
+</head>
+<body>
+
+<main class="principal">
+    
+    <!-- The drawer is always open in large screens. The header is always shown,even in small screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
+
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+        </div>
+    <!-- Right aligned menu below button -->
+<button id="demo-menu-lower-right"
+        class="mdl-button mdl-js-button mdl-button--icon">
+  <i class="material-icons">more_vert</i>
+</button>
+
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-right">
+  <li class="mdl-menu__item">Busca Avançada</li>
+</ul>
+      </div>
+
+    </div>
+
+  </header>
+
+  <div class="mdl-layout__drawer">
+    <img src="img/ged.png" alt="Logo Sistema" class="logo_principal">
+    <span class="mdl-layout-title">Diretórios</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">CONTABILIDADE</a>
+      <a class="mdl-navigation__link" href="">RH</a>
+      <a class="mdl-navigation__link" href="">ADM</a>
+      <a class="mdl-navigation__link" href="">COMPRAS</a>
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here -->
+      <!-- Colored FAB button with ripple -->
+    <div class="btn_p">
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored btn_inf" id="show-dialog">
+      <i class="material-icons">add</i>
+    </button>
+    </div>
+    </div>
+
+  </main>
+
+  
+  <dialog class="mdl-dialog">
+    <h4 class="mdl-dialog__title">Cadastro de Arquivos</h4>
+    <div class="mdl-dialog__content">
+      
+      <!-- Textfield with Floating Label -->
+
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="sample3">
+        <label class="mdl-textfield__label" for="sample3">Título</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="sample3">
+        <label class="mdl-textfield__label" for="sample3">Número do documento</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="sample3">
+        <label class="mdl-textfield__label" for="sample3">Palavra Chave</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="sample3">
+        <label class="mdl-textfield__label" for="sample3">Número do documento</label>
+      </div>  
+    </form>
+
+
+    </div>
+    <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button">Cadastrar</button>
+      <button type="button" class="mdl-button close">Cancelar</button>
+    </div>
+  </dialog>
+  <script>
+    var dialog = document.querySelector('dialog');
+    var showDialogButton = document.querySelector('#show-dialog');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    showDialogButton.addEventListener('click', function() {
+      dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+      dialog.close();
+    });
+  </script>
+</div>
+   
+</main>
+
+
+</body>
+</html>

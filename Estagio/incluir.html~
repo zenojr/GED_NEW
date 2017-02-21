@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Incluir Arquivo GED</title>
+</head>
+<body>
+	<form action="#">
+	  <div class="mdl-textfield mdl-js-textfield">
+	    <label class="mdl-textfield__label" for="sample1">Título:</label>
+	    <input class="mdl-textfield__input" type="text" id="sample1">
+	    
+	  </div>
+	</form>
+	<form action="#">
+	  <div class="mdl-textfield mdl-js-textfield">
+	    <label class="mdl-textfield__label" for="sample1">Palavra Chave:</label>
+	    <input class="mdl-textfield__input" type="text" id="sample1">
+	    
+	  </div>
+	</form>
+	<form action="#">
+	  <div class="mdl-textfield mdl-js-textfield">
+	    <label class="mdl-textfield__label" for="sample1">Diretório:</label>
+	    <input class="mdl-textfield__input" type="text" id="sample1">
+	  </div>
+	</form>
+	<form action="#">
+	  <div class="mdl-textfield mdl-js-textfield">
+	    <label class="mdl-textfield__label" for="sample1">Grupos que terão acesso:</label>
+	    <input class="mdl-textfield__input" type="text" id="sample1">
+	  </div>
+	</form>
+	<form action="/action_page.php">
+  	<input type="checkbox" name="vehicle" value="Leitura"> Leitura<br>
+  	<input type="checkbox" name="vehicle" value="Gravação" checked> Gravação<br>
+	<input type="checkbox" name="vehicle" value="Gravação" checked> Edição<br>
+	</form>
+	<form action="#">
+	  <div class="mdl-textfield mdl-js-textfield">
+	    <label class="mdl-textfield__label" for="sample1">Anexo:</label>
+	    <input class="mdl-textfield__input" type="text" id="sample1">
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+		<i class="material-icons">Anexar</i>
+		</button>
+	    
+	  </div>
+	</form>
+	<form action="#">
+	  <div class="mdl-textfield mdl-js-textfield">
+	    <label class="mdl-textfield__label" for="sample1">Descrição:</label>
+	    <input class="mdl-textfield__input" type="text" id="sample1">
+	  </div>
+	</form>
+
+	<!-- Colored FAB button with ripple -->
+	<a href="hello.html"><button>Salvar</button></a
+</body>
+</html>
